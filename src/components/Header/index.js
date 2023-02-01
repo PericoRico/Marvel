@@ -1,0 +1,1 @@
+export { default } from 'Header' //NO SIRVE PARA NADA

@@ -6,12 +6,16 @@ import Home from './pages/Home';
 import Series from './pages/Series';
 import Comics from './pages/Comics';
 import Error404 from './pages/Error404';
+import Header from './components/Header/Header';
 
 
 function App() {
+
   return ( //TODO ver video de version 6
     <div>
+
       <BrowserRouter>
+        <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/inicio" element={<Home />} />
