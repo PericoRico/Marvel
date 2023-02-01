@@ -11,16 +11,16 @@ import Error404 from './pages/Error404';
 function App() {
   return ( //TODO ver video de version 6
     <div>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/inicio" exact component={() => <Home />} />
-          <Route path="/series" exact component={() => <Series />} />
-          <Route path="/comics" exact component={() => <Comics />} />
-          <Route component={() => <Error404 />} />
-        </Switch>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inicio" element={<Home />} />
+          <Route path="/series" element={<Series />} />
+          <Route path="/comics" element={<Comics />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
 
-      </Router>
+      </BrowserRouter>
     </div>
   )
 }
