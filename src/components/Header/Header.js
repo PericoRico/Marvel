@@ -15,7 +15,9 @@ export default function Header() {
     console.log(activeItem);
 
     const handleItemClick = (e, { name }) => {
+        //Dejar activo el menu de la pagina que estoy
         setActiveItem(name);
+        //Navegar al que pulso
         history(name);
     };
 
