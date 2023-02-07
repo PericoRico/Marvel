@@ -7,11 +7,16 @@ import Series from './pages/Series';
 import Comics from './pages/Comics';
 import Error404 from './pages/Error404';
 import Header from './components/Header/Header';
+import useFetch from './hooks/useFetch';
+import ListLastEvents from './components/ListLastEvents/ListLastEvents';
 
 
 function App() {
 
-  return ( //TODO ver video de version 6
+  const exampleApi = useFetch('http://gateway.marvel.com/v1/public/comics?ts=1&apikey=a088261843f3a00a05868b310ff3874a&hash=043fc0b1885b912c426367c8143ceb6a');
+  console.log(exampleApi);
+
+  return (
     <div>
 
       <BrowserRouter>
@@ -23,7 +28,7 @@ function App() {
           <Route path="/comics" element={<Comics />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-
+        <ListLastEvents></ListLastEvents>
       </BrowserRouter>
     </div>
   )
