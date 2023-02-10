@@ -18,7 +18,7 @@ export default function Comics() {
                 <GridColumn>
                     <Container bg="light">
                         <Header as="h2">Los mejores comics</Header>
-                        <ListComic></ListComic>
+                        <ListComic listComics={listComics} renderComics={renderComics} setRenderComics={setRenderComics}></ListComic>
                     </Container>
                 </GridColumn>
             </Grid>
