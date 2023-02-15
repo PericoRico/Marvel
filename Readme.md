@@ -1,1 +1,1 @@
-https://app.netlify.com/sites/marvel-peri/settings/general
+https://marvel-peri.netlify.app/
