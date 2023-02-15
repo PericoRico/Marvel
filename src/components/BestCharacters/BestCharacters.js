@@ -4,6 +4,8 @@ import marvelImage from "../../img/marvel.png";
 
 import "./BestCharacters.scss";
 
+
+//TODO Añadir funcionalidad al boton
 export default function BestCharacters() {
     return (
         <Container>
